@@ -56,6 +56,26 @@ return packer.startup(function(use)
     use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
     use({ "nvim-telescope/telescope.nvim", branch="0.1.x" })
 
+    -- code autocomplete
+    use("hrsh7th/nvim-cmp")
+    use("hrsh7th/cmp-buffer")
+    use("hrsh7th/cmp-path")
+
+    use("L3MON4D3/LuaSnip")
+    use("saadparwaiz1/cmp_luasnip")
+    use("rafamadriz/friendly-snippets")
+
+    -- LSP Block
+    -- managing and installing LSP servers
+    use("williamboman/mason.nvim")
+    use("williamboman/mason-lspconfig.nvim")
+    
+    --configuring the LSP servers
+    use("neovim/nvim-lspconfig")
+
+
+    -- END LSP Block
+
     if packer_bootstrap then
         require("packer").sync()
     end
