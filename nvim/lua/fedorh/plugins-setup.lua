@@ -1,5 +1,4 @@
--- autocommand that reloads neovim and installs/updates/removes plugins
--- when file is saved
+-- autocommand that reloads neovim and installs/updates/removes plugins when files is saved
 vim.cmd([[ 
     augroup packer_user_config
         autocmd!
