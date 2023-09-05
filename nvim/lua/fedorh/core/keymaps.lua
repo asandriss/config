@@ -22,3 +22,5 @@ km.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 km.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 km.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
+-- plugin related keybinding
+km.set("n", "<leader>sm", ":MaximizerToggle<CR>")    -- use split maximizer
