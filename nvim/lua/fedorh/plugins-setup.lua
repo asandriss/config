@@ -31,6 +31,8 @@ end
 return packer.startup(function(use)
     use("wbthomason/packer.nvim")   -- packer plugin, it manages itself
 
+    use("nvim-lua/plenary.nvim")    -- library that other plugins use
+
     use("bluz71/vim-nightfly-guicolors") -- color scheme, it can be any repo
 
     use("christoomey/vim-tmux-navigator") -- allow ctrl+hjkl to move around the open splits
@@ -43,6 +45,10 @@ return packer.startup(function(use)
 
     use("numToStr/Comment.nvim")    -- makes commenting out lines easier, needs config; in normal mode do GC5J to comment/uncomment 5 lines or GCC to comment current line
 
+    --file explorer
+    use("nvim-tree/nvim-tree.lua")
+
+    
     if packer_bootstrap then
         require("packer").sync()
     end
