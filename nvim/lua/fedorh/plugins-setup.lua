@@ -47,6 +47,7 @@ return packer.startup(function(use)
 
     --file explorer
     use("nvim-tree/nvim-tree.lua")
+    use("kyazdani42/nvim-web-devicons") -- icons for the explorer
 
     
     if packer_bootstrap then
