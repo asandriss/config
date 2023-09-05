@@ -24,3 +24,4 @@ km.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- plugin related keybinding
 km.set("n", "<leader>sm", ":MaximizerToggle<CR>")    -- use split maximizer
+km.set("n", "<leader>e", ":NvimTreeToggle<CR>")     -- toggle file explorer
