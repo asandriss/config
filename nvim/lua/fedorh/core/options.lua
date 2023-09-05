@@ -36,4 +36,4 @@ o.splitright = true
 o.splitbelow = true
 
 -- keywords
-o.iskeyword("-")  -- dashed words are considered one word
+o.iskeyword:append("-")  -- dashed words are considered one word
