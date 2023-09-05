@@ -18,15 +18,17 @@ vim.cmd([[
   augroup end
 ]])
 
-return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+local status, packer = pcall(require, "packer")
+if not status then
+    return
+end
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if packer_bootstrap then
-    require('packer').sync()
-  end
+return packer.startup(function(use)
+    use("wbthomason/packer.nvim")   -- packer plugin, it manages itself
+
+    use("bluz71/vim-nightfly-guicolors") -- color scheme, it can be any repo
+
+    if packer_bootstrap then
+        require("packer").sync()
+    end
 end)
