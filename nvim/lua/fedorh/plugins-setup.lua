@@ -71,8 +71,11 @@ return packer.startup(function(use)
     
     --configuring the LSP servers
     use("neovim/nvim-lspconfig")
-
-
+    use("hrsh7th/cmp-nvim-lsp")                   -- smart autocomplete
+    use({"glepnir/lspsaga.nvim", branch="main"})
+    --use("jose-elias-alvarez/typescript.nvim")   -- typescript specific
+    use("onsails/lspkind.nvim")             -- icons for auto completion window
+    
     -- END LSP Block
 
     if packer_bootstrap then
