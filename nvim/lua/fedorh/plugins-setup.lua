@@ -64,6 +64,8 @@ return packer.startup(function(use)
     use("saadparwaiz1/cmp_luasnip")
     use("rafamadriz/friendly-snippets")
 
+    use("simrat39/rust-tools.nvim")
+
     -- LSP Block
     -- managing and installing LSP servers
     use("williamboman/mason.nvim")
