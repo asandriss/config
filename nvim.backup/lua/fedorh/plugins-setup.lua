@@ -64,6 +64,11 @@ return packer.startup(function(use)
     use("saadparwaiz1/cmp_luasnip")
     use("rafamadriz/friendly-snippets")
 
+    use("simrat39/rust-tools.nvim")
+    use({"rust-lang/rust.vim", ft="rust", init = function() 
+            vim.g.rustfmt_autosave = 1
+        end })
+
     -- LSP Block
     -- managing and installing LSP servers
     use("williamboman/mason.nvim")
